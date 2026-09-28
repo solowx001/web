@@ -1,5 +1,5 @@
 {
-  "name": "冰冰",
+  "name": "王冰焰",
   "role": "设计师 · 创作者 · 终身学习者",
   "intro": "我专注于设计与数字产品，用清晰的思考和细致的执行，把复杂的问题变成简单、好用的体验。这里记录我的想法、作品，以及正在发生的事。",
   "aboutTitle": "保持好奇，认真创造。",
@@ -12,7 +12,7 @@
   "projectTitle": "一些近期作品。",
   "contactTitle": "有想法？我们聊聊。",
   "contactText": "欢迎聊聊合作、项目，或者任何有趣的新点子。",
-  "email": "solowx@gmail.com",
+  "email": "solowx@163.com",
   "xiaohongshu": "https://www.xiaohongshu.com/",
   "github": "https://github.com/",
   "projects": [
@@ -30,11 +30,6 @@
       "title": "开源组件集",
       "type": "开源工具 · 2024",
       "description": "一套轻量、易用的界面组件，帮助小团队更快开始构建产品。"
-    },
-    {
-      "title": "test",
-      "type": "test",
-      "description": "test"
     }
   ]
 }
