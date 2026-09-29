@@ -15,6 +15,7 @@
   "email": "solowx@gmail.com",
   "xiaohongshu": "https://www.xiaohongshu.com/",
   "github": "https://github.com/",
+  "discoverIntro": "AI 创作、产品设计与实践动态。读一则新发现，回到原作者。",
   "projects": [
     {
       "title": "慢慢 · 日常习惯",
@@ -30,6 +31,19 @@
       "title": "开源组件集",
       "type": "开源工具 · 2024",
       "description": "一套轻量、易用的界面组件，帮助小团队更快开始构建产品。"
+    }
+  ],
+  "discoveries": [
+    {
+      "id": "606d4d15-e18f-48c3-ad64-dfe4f1ddd1cc",
+      "date": "2026-09-29",
+      "title": "视频角色的衣帽间：服装提取 Skill",
+      "summary": "AI 视频里的角色的一间衣帽间。",
+      "url": "https://x.com/nanyuan0412/status/2104779172434546744",
+      "image": "https://pbs.twimg.com/media/HTWdC3-bcAAFje3?format=jpg&name=small",
+      "source": "",
+      "category": "AI 生图与视频",
+      "sourceType": "X"
     }
   ]
 }
