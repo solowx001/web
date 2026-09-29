@@ -87,3 +87,171 @@
     }
     @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: .01ms !important; } }
 
+    .discover-page { padding: 0 0 78px; }
+    .discover-hero { display: flex; align-items: end; justify-content: space-between; gap: 32px; padding: 65px 0 42px; }
+    .discover-hero h1 { margin: 13px 0 12px; font-size: clamp(44px, 6vw, 68px); }
+    .discover-hero p { max-width: 560px; margin: 0; color: #656860; font-size: 14px; line-height: 1.9; }
+    .discover-note { display: grid; gap: 7px; max-width: 235px; padding: 17px 0 4px 18px; border-left: 1px solid var(--line); color: var(--muted); font-size: 11px; line-height: 1.7; }
+    .discover-note strong { color: var(--ink); font-size: 12px; font-weight: 550; }
+    .discover-layout { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 46px; border-top: 1px solid var(--line); padding-top: 30px; }
+    .discover-sidebar { align-self: start; position: sticky; top: 24px; }
+    .discover-label, .discover-side-section h2 { display: block; margin: 0 0 11px; color: var(--ink); font-size: 12px; font-family: var(--sans); font-weight: 600; letter-spacing: 0; }
+    .discover-search { width: 100%; height: 40px; padding: 0 11px; border: 1px solid var(--line); border-radius: 2px; background: #fff; color: var(--ink); font: 12px var(--sans); outline: none; }
+    .discover-search:focus { border-color: #899889; box-shadow: 0 0 0 3px #3f5d4b12; }
+    .discover-side-section { margin-top: 28px; }
+    .discover-side-section h2 { margin-bottom: 12px; }
+    .discover-filter { width: 100%; display: flex; justify-content: space-between; gap: 12px; padding: 9px 10px; border: 0; border-radius: 2px; background: transparent; color: #6c7069; text-align: left; font: 12px var(--sans); cursor: pointer; }
+    .discover-filter:hover, .discover-filter.is-active { background: #eceedf; color: var(--accent); }
+    .discover-count { color: #959990; font-size: 10px; }
+    .discover-hint { margin: 8px 0; color: #969990; font-size: 11px; line-height: 1.7; }
+    .discover-chips { display: flex; flex-wrap: wrap; gap: 7px; }
+    .discover-chip { padding: 7px 9px; border: 1px solid var(--line); border-radius: 2px; background: transparent; color: #6c7069; font: 10px var(--sans); cursor: pointer; }
+    .discover-chip:hover, .discover-chip.is-active { border-color: var(--accent); background: var(--accent); color: #fff; }
+    .discover-view-toggle { display: grid; gap: 5px; }
+    .discover-view-toggle button { padding: 8px 10px; border: 1px solid transparent; background: transparent; color: #6c7069; text-align: left; font: 11px var(--sans); cursor: pointer; }
+    .discover-view-toggle button.is-active { border-color: var(--line); background: #fff; color: var(--accent); }
+    .discover-feed { min-width: 0; }
+    .discover-feed-top { display: flex; justify-content: space-between; align-items: center; margin: 0 0 25px; color: var(--muted); font-size: 11px; }
+    .discover-feed-top button { border: 0; background: none; color: #747970; font: inherit; cursor: pointer; }
+    .discover-feed-top button:hover { color: var(--accent); }
+    .discover-issue + .discover-issue { margin-top: 42px; }
+    .discover-issue-head { display: flex; justify-content: space-between; align-items: end; margin-bottom: 17px; }
+    .discover-issue-head .section-kicker { font-size: 9px; }
+    .discover-issue-head h2 { margin-top: 6px; font-size: 25px; }
+    .discover-issue-head > span { color: var(--muted); font-size: 10px; }
+    .discover-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .discover-card { min-width: 0; border: 1px solid var(--line); background: #fff; transition: border-color .18s, transform .18s; }
+    .discover-card:hover { border-color: #cbd0c7; transform: translateY(-2px); }
+    .discover-image { display: block; aspect-ratio: 16 / 9; overflow: hidden; background: #eceee9; }
+    .discover-image img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    .discover-card-body { display: flex; flex-direction: column; min-height: 210px; padding: 17px; }
+    .discover-meta { display: flex; align-items: center; justify-content: space-between; gap: 9px; color: #90948c; font-size: 9px; }
+    .discover-category { overflow: hidden; max-width: 57%; padding: 4px 6px; background: #f1f3ef; color: var(--accent); text-overflow: ellipsis; white-space: nowrap; }
+    .discover-card h3 { margin: 13px 0 8px; font-family: var(--serif); font-size: 18px; line-height: 1.5; font-weight: 500; }
+    .discover-card p { margin: 0; color: #71756e; font-size: 11px; line-height: 1.85; }
+    .discover-card-foot { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: auto; padding-top: 17px; color: #9a9d95; font-size: 9px; }
+    .discover-card-foot a { color: var(--accent); white-space: nowrap; }
+    .discover-card-foot a:hover { text-decoration: underline; }
+    .discover-empty { padding: 50px 20px; border: 1px dashed #d8dcd3; color: #858980; text-align: center; font-size: 12px; line-height: 1.8; }
+    .discover-card[hidden], .discover-issue[hidden], .discover-empty[hidden] { display: none !important; }
+    .discover-layout.is-list .discover-grid { display: grid; grid-template-columns: 1fr; gap: 0; }
+    .discover-layout.is-list .discover-card { display: grid; grid-template-columns: minmax(150px, .35fr) 1fr; border-width: 0 0 1px; background: transparent; }
+    .discover-layout.is-list .discover-card:hover { transform: none; }
+    .discover-layout.is-list .discover-image { aspect-ratio: auto; min-height: 145px; }
+    .discover-layout.is-list .discover-card-body { min-height: 0; padding: 17px 20px; }
+    .discover-layout.is-list .discover-card h3 { margin-top: 8px; font-size: 17px; }
+    .discover-layout.is-list .discover-card-foot { padding-top: 10px; }
+    @media (max-width: 760px) {
+      .discover-page { padding-bottom: 52px; }
+      .discover-hero { align-items: flex-start; flex-direction: column; gap: 20px; padding: 45px 0 27px; }
+      .discover-note { max-width: none; padding: 0 0 0 13px; }
+      .discover-layout { grid-template-columns: 1fr; gap: 24px; padding-top: 22px; }
+      .discover-sidebar { position: static; }
+      .discover-side-section { margin-top: 18px; }
+      .discover-side-section[data-compact] { margin-top: 16px; }
+      .discover-side-section h2 { margin-bottom: 9px; }
+      .discover-sidebar .discover-side-section:first-of-type .discover-filter { display: inl…1346 tokens truncated…editor-grid textarea{min-height:82px}.discovery-editor-actions{display:flex;gap:8px;align-items:center;margin-top:14px}.discovery-manager-list{display:grid;gap:10px;margin-top:16px}.discovery-manager-card{padding:15px 16px;border:1px solid var(--line);background:#fff}.discovery-manager-head{display:flex;justify-content:space-between;align-items:start;gap:16px}.discovery-manager-title{margin:0;font-size:14px;font-weight:600;line-height:1.5}.discovery-manager-meta{margin:5px 0 0;color:var(--muted);font-size:11px}.discovery-manager-summary{margin:10px 0 0;color:#626a62;font-size:12px;line-height:1.7;white-space:pre-wrap}.discovery-manager-actions{display:flex;gap:7px;flex-shrink:0}.discovery-manager-actions .btn{padding:7px 9px}.discovery-manager-link{display:inline-block;margin-top:9px;color:var(--green);font-size:11px;word-break:break-all}.empty-manager{padding:20px;border:1px dashed var(--line);color:var(--muted);font-size:12px;text-align:center}
+    @media(max-width:720px){.topbar{padding:0 16px}.preview{display:none}.layout{width:calc(100% - 28px);margin:25px auto 45px}.grid{grid-template-columns:1fr}.panel.full{grid-column:auto}.heading{align-items:flex-start;flex-direction:column}.heading h1{font-size:25px}.panel{padding:19px}.two{grid-template-columns:1fr;gap:0}.top-actions .btn{padding:9px 10px}.project-fields{grid-template-columns:1fr}.project-card textarea{grid-column:auto}.discovery-editor-grid{grid-template-columns:1fr}.discovery-editor-grid .wide{grid-column:auto}.discovery-manager-head{flex-direction:column}.discovery-manager-actions{order:-1}}
+  </style>
+</head>
+<body>
+  <section id="loginView" class="login-wrap hidden">
+    <form id="loginForm" class="login">
+      <div class="mark">王</div><h1>个人主页后台</h1><p class="sub">登录后编辑网站内容并生成静态页面</p>
+      <label for="password">管理员密码</label><input id="password" type="password" autocomplete="current-password" required placeholder="输入服务器配置的管理员密码">
+      <button class="btn" type="submit">登录后台</button><div id="loginError" class="error" role="status"></div>
+    </form>
+  </section>
+
+  <div id="appView" class="hidden">
+    <header class="topbar"><div class="topbrand">个人主页<span> / 管理后台</span></div><div class="top-actions"><span class="preview">公开预览：生成后可访问</span><a class="btn secondary" href="/index.html" target="_blank" rel="noreferrer">预览网站</a><button id="logoutBtn" class="btn ghost" type="button">退出</button></div></header>
+    <main class="layout">
+      <div class="heading"><div><h1>网站内容</h1><p>修改前端展示的信息。保存内容后，再生成静态页面。</p></div><span id="savedState" class="saved">正在加载…</span></div>
+      <form id="contentForm">
+        <div class="grid">
+          <section class="panel">
+            <div class="panel-head"><h2>个人介绍</h2><span>首页首屏</span></div>
+            <div class="field"><label for="name">姓名</label><input id="name" name="name" required></div>
+            <div class="field"><label for="role">身份 / 标题</label><input id="role" name="role"></div>
+            <div class="field"><label for="intro">首页介绍</label><textarea id="intro" name="intro"></textarea></div>
+          </section>
+          <section class="panel">
+            <div class="panel-head"><h2>关于我</h2><span>个人经历与信息</span></div>
+            <div class="field"><label for="aboutTitle">区块标题</label><input id="aboutTitle" name="aboutTitle"></div>
+            <div class="field"><label for="bio1">介绍段落一</label><textarea id="bio1" name="bio1"></textarea></div>
+            <div class="field"><label for="bio2">介绍段落二</label><textarea id="bio2" name="bio2"></textarea></div>
+            <div class="two"><div class="field"><label for="occupation">目前身份</label><input id="occupation" name="occupation"></div><div class="field"><label for="city">所在城市</label><input id="city" name="city"></div></div>
+            <div class="two"><div class="field"><label for="focus">关注领域</label><input id="focus" name="focus"></div><div class="field"><label for="now">最近在做</label><input id="now" name="now"></div></div>
+          </section>
+          <section class="panel full">
+            <div class="panel-head"><h2>项目产品</h2><span>可添加、删除和调整项目文案</span></div>
+            <div class="field"><label for="projectTitle">项目区块标题</label><input id="projectTitle" name="projectTitle"></div>
+            <div id="projectList" class="project-list"></div>
+            <button id="addProject" class="btn ghost" type="button" style="margin-top:14px">＋ 添加项目</button>
+          </section>
+          <section class="panel">
+            <div class="panel-head"><h2>联系方式</h2><span>联系区块</span></div>
+            <div class="field"><label for="contactTitle">联系标题</label><input id="contactTitle" name="contactTitle"></div>
+            <div class="field"><label for="contactText">联系说明</label><textarea id="contactText" name="contactText"></textarea></div>
+            <div class="field"><label for="email">邮箱</label><input id="email" name="email" type="email" required></div>
+          </section>
+          <section class="panel">
+            <div class="panel-head"><h2>社交链接</h2><span>可留空隐藏</span></div>
+            <div class="field"><label for="xiaohongshu">小红书网址</label><input id="xiaohongshu" name="xiaohongshu" type="url" placeholder="https://"></div>
+            <div class="field"><label for="github">GitHub 网址</label><input id="github" name="github" type="url" placeholder="https://"></div>
+          </section>
+          <section class="panel full" aria-labelledby="discoverManagerTitle">
+            <div class="panel-head"><h2 id="discoverManagerTitle">创作发现</h2><span>整理灵感内容，发布后可按日期与主题筛选</span></div>
+            <div class="field"><label for="discoverIntro">板块说明</label><input id="discoverIntro" name="discoverIntro" maxlength="300" placeholder="AI 创作、产品设计与实践动态。"></div>
+            <div class="discovery-editor" id="discoveryEditor">
+              <div class="panel-head"><h2 id="discoveryEditorTitle">新增采集内容</h2><span>每条内容都会链接回原文</span></div>
+              <div class="discovery-editor-grid">
+                <div class="field"><label for="discoveryTitle">标题</label><input id="discoveryTitle" maxlength="180" placeholder="内容标题"></div>
+                <div class="field"><label for="discoveryDate">原文日期</label><input id="discoveryDate" type="date"></div>
+                <div class="field"><label for="discoveryCategory">内容主题</label><input id="discoveryCategory" list="discoveryCategories" maxlength="60" placeholder="选择或输入主题"><datalist id="discoveryCategories"><option>AI 生图与视频</option><option>AI 编程与工作流</option><option>产品与交互设计</option><option>独立开发与产品</option><option>内容与增长</option><option>AI 资讯与工具</option></datalist></div>
+                <div class="field"><label for="discoverySource">作者 / 来源</label><input id="discoverySource" maxlength="120" placeholder="例如：作者名称 · X"></div>
+                <div class="field"><label for="discoverySourceType">来源类型</label><select id="discoverySourceType"><option>RSS</option><option>X</option><option>官网</option><option>Newsletter</option><option selected>其他</option></select></div>
+                <div class="field"><label for="discoveryUrl">原文链接</label><input id="discoveryUrl" inputmode="url" placeholder="https://"></div>
+                <div class="field wide"><label for="discoveryImage">配图链接（可选）</label><input id="discoveryImage" inputmode="url" placeholder="https://"></div>
+                <div class="field wide"><label for="discoverySummary">内容摘要</label><textarea id="discoverySummary" maxlength="1600" placeholder="用几句话记录值得留存的要点…"></textarea></div>
+              </div>
+              <div class="discovery-editor-actions"><button id="saveDiscoveryEntry" class="btn" type="button">添加到采集清单</button><button id="cancelDiscoveryEdit" class="btn ghost hidden" type="button">取消编辑</button></div>
+            </div>
+            <div id="discoveryManagerList" class="discovery-manager-list" aria-live="polite"></div>
+          </section>
+        </div>
+        <div class="tip">保存会将草稿安全写入 GitHub 的 <strong>cms-draft</strong> 分支；点击“静态化”后，主页、关于我、项目产品、创作发现和联系方式会写入生产分支，并触发 Vercel 自动部署。</div>
+        <div class="actions" style="margin-top:20px"><button id="saveBtn" class="btn" type="submit">保存内容</button><button id="publishBtn" class="btn secondary" type="button" disabled>静态化</button><span id="status" class="statusline" role="status"></span></div>
+      </form>
+    </main>
+  </div>
+  <script>
+    const loginView=document.querySelector('#loginView'),appView=document.querySelector('#appView'),form=document.querySelector('#contentForm'),statusEl=document.querySelector('#status'),savedState=document.querySelector('#savedState'),publishBtn=document.querySelector('#publishBtn');
+    let dirty=false;
+    async function api(url,options={}){const response=await fetch(url,{credentials:'same-origin',headers:{'Content-Type':'application/json',...(options.headers||{})},...options});let data={};try{data=await response.json()}catch{}if(!response.ok)throw new Error(data.error||'操作失败');return data}
+    function markDirty(){dirty=true;savedState.textContent='有未保存的修改';publishBtn.disabled=true;statusEl.textContent='修改尚未保存。'}
+    function addProject(project={title:'',type:'',description:''}){const card=document.createElement('div');card.className='project-card';const head=document.createElement('div');head.className='project-head';const label=document.createElement('span');label.textContent=`项目 ${document.querySelectorAll('.project-card').length+1}`;const del=document.createElement('button');del.type='button';del.className='btn danger';del.textContent='删除';del.addEventListener('click',()=>{card.remove();renumber();markDirty()});head.append(label,del);const fields=document.createElement('div');fields.className='project-fields';for(const [key,placeholder] of [['title','项目名称'],['type','项目类型与年份'],['description','项目介绍']]){const el=key==='description'?document.createElement('textarea'):document.createElement('input');el.value=project[key]||'';el.placeholder=placeholder;el.dataset.key=key;el.addEventListener('input',markDirty);fields.append(el)}card.append(head,fields);document.querySelector('#projectList').append(card)}
+    function renumber(){document.querySelectorAll('.project-card .project-head span').forEach((el,i)=>el.textContent=`项目 ${i+1}`)}
+    let discoveries=[],editingDiscovery=-1;
+    const discoveryList=document.querySelector('#discoveryManagerList');
+    function clearDiscoveryEditor(){editingDiscovery=-1;for(const id of ['discoveryTitle','discoveryCategory','discoverySource','discoveryUrl','discoveryImage','discoverySummary'])document.querySelector(`#${id}`).value='';const today=new Date(Date.now()-new Date().getTimezoneOffset()*60000).toISOString().slice(0,10);document.querySelector('#discoveryDate').value=today;document.querySelector('#discoverySourceType').value='其他';document.querySelector('#discoveryEditorTitle').textContent='新增采集内容';document.querySelector('#saveDiscoveryEntry').textContent='添加到采集清单';document.querySelector('#cancelDiscoveryEdit').classList.add('hidden')}
+    function renderDiscoveryManager(){discoveryList.replaceChildren();if(!discoveries.length){const empty=document.createElement('div');empty.className='empty-manager';empty.textContent='暂未添加内容。填写上方表单即可建立第一条发现。';discoveryList.append(empty);return}discoveries.forEach((item,index)=>{const card=document.createElement('article');card.className='discovery-manager-card';const head=document.createElement('div');head.className='discovery-manager-head';const details=document.createElement('div');const title=document.createElement('h3');title.className='discovery-manager-title';title.textContent=item.title;const meta=document.createElement('p');meta.className='discovery-manager-meta';meta.textContent=[item.date,item.category,item.sourceType,item.source].filter(Boolean).join(' · ');details.append(title,meta);const actions=document.createElement('div');actions.className='discovery-manager-actions';const edit=document.createElement('button');edit.type='button';edit.className='btn ghost';edit.textContent='编辑';edit.addEventListener('click',()=>editDiscovery(index));const del=document.createElement('button');del.type='button';del.className='btn danger';del.textContent='删除';del.addEventListener('click',()=>{discoveries.splice(index,1);if(editingDiscovery===index)clearDiscoveryEditor();else if(editingDiscovery>index)editingDiscovery--;renderDiscoveryManager();markDirty()});actions.append(edit,del);head.append(details,actions);const summary=document.createElement('p');summary.className='discovery-manager-summary';summary.textContent=item.summary;const link=document.createElement('a');link.className='discovery-manager-link';link.href=item.url;link.target='_blank';link.rel='noopener noreferrer';link.textContent=item.url;card.append(head,summary,link);discoveryList.append(card)})}
+    function validDiscoveryUrl(value){try{const url=new URL(value);return ['http:','https:'].includes(url.protocol)&&Boolean(url.hostname)}catch{return false}}
+    function editDiscovery(index){const item=discoveries[index];if(!item)return;editingDiscovery=index;for(const key of ['title','date','category','source','url','image','summary'])document.querySelector(`#discovery${key[0].toUpperCase()+key.slice(1)}`).value=item[key]||'';document.querySelector('#discoverySourceType').value=item.sourceType||'其他';document.querySelector('#discoveryEditorTitle').textContent='编辑采集内容';document.querySelector('#saveDiscoveryEntry').textContent='保存条目修改';document.querySelector('#cancelDiscoveryEdit').classList.remove('hidden');document.querySelector('#discoveryTitle').focus()}
+    function fill(data){for(const [key,value] of Object.entries(data)){if(key==='projects'||key==='discoveries')continue;const el=form.elements.namedItem(key);if(el)el.value=value??''}if(!data.discoverIntro)form.elements.namedItem('discoverIntro').value='AI 创作、产品设计与实践动态。读一则新发现，回到原作者。';document.querySelector('#projectList').replaceChildren();(data.projects||[]).forEach(addProject);discoveries=Array.isArray(data.discoveries)?data.discoveries.map(item=>({...item})):[];renderDiscoveryManager();clearDiscoveryEditor();dirty=false;savedState.textContent='内容已加载';publishBtn.disabled=false}
+    async function showApp(){loginView.classList.add('hidden');appView.classList.remove('hidden');const data=await api('/api/content');fill(data)}
+    async function init(){try{const state=await api('/api/session');if(state.authenticated)await showApp();else loginView.classList.remove('hidden')}catch{loginView.classList.remove('hidden')}}
+    document.querySelector('#loginForm').addEventListener('submit',async e=>{e.preventDefault();const err=document.querySelector('#loginError');err.textContent='';try{await api('/api/login',{method:'POST',body:JSON.stringify({password:document.querySelector('#password').value})});await showApp()}catch(error){err.textContent=error.message}});
+    form.addEventListener('input',e=>{if(!e.target.closest('.project-card'))markDirty()});
+    document.querySelector('#projectList').addEventListener('input',markDirty);
+    document.querySelector('#addProject').addEventListener('click',()=>{if(document.querySelectorAll('.project-card').length>=20){statusEl.textContent='最多添加 20 个项目';return}addProject();markDirty()});
+    document.querySelector('#saveDiscoveryEntry').addEventListener('click',()=>{const title=document.querySelector('#discoveryTitle'),date=document.querySelector('#discoveryDate'),category=document.querySelector('#discoveryCategory'),url=document.querySelector('#discoveryUrl'),image=document.querySelector('#discoveryImage'),summary=document.querySelector('#discoverySummary');if(editingDiscovery<0&&discoveries.length>=200){statusEl.textContent='最多添加 200 条创作发现';return}if(!title.value.trim()||!date.value||!category.value.trim()||!url.value.trim()||!summary.value.trim()){statusEl.textContent='请填写标题、日期、主题、原文链接和摘要。';return}if(!validDiscoveryUrl(url.value.trim())||(image.value&&!validDiscoveryUrl(image.value.trim()))){statusEl.textContent='链接格式无效，请使用完整的 http:// 或 https:// 地址。';return}const previous=editingDiscovery>=0?discoveries[editingDiscovery]:null;const item={id:previous?.id||crypto.randomUUID(),title:title.value.trim(),date:date.value,category:category.value.trim(),source:document.querySelector('#discoverySource').value.trim(),sourceType:document.querySelector('#discoverySourceType').value,image:image.value.trim(),url:url.value.trim(),summary:summary.value.trim()};if(editingDiscovery>=0)discoveries[editingDiscovery]=item;else discoveries.push(item);renderDiscoveryManager();clearDiscoveryEditor();markDirty()});
+    document.querySelector('#cancelDiscoveryEdit').addEventListener('click',clearDiscoveryEditor);
+    function collectContent(){const data=Object.fromEntries(new FormData(form).entries());data.projects=[...document.querySelectorAll('.project-card')].map(card=>Object.fromEntries([...card.querySelectorAll('[data-key]')].map(el=>[el.dataset.key,el.value])));data.discoveries=discoveries;return data}
+    form.addEventListener('submit',async e=>{e.preventDefault();const saveBtn=document.querySelector('#saveBtn');saveBtn.disabled=true;statusEl.textContent='正在保存草稿到 GitHub…';try{await api('/api/content',{method:'PUT',body:JSON.stringify(collectContent())});dirty=false;savedState.textContent='草稿已保存';publishBtn.disabled=false;statusEl.textContent='草稿已安全保存。确认无误后点击“静态化”发布到网站。'}catch(error){statusEl.textContent=error.message}finally{saveBtn.disabled=false}});
+    publishBtn.addEventListener('click',async()=>{if(dirty){statusEl.textContent='请先保存修改，再进行静态化。';return}publishBtn.disabled=true;statusEl.textContent='正在静态化并提交生产分支…';try{const result=await api('/api/publish',{method:'POST',body:JSON.stringify(collectContent())});statusEl.textContent=`已提交 ${result.pages.join('、')}。${result.deployment||'网站正在部署。'}`;savedState.textContent='已发布，等待部署完成'}catch(error){statusEl.textContent=error.message}finally{publishBtn.disabled=false}});
+    document.querySelector('#logoutBtn').addEventListener('click',async()=>{await api('/api/logout',{method:'POST',body:'{}'});appView.classList.add('hidden');loginView.classList.remove('hidden');document.querySelector('#password').value=''});
+    init();
+  </script>
+</body>
+</html>

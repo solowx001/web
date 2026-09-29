@@ -13,4 +13,4 @@ const photo = photoCandidates.find(file => fs.existsSync(file));
 if (!photo) throw new Error('Missing myphoto.jpg');
 fs.copyFileSync(photo, path.join(output, 'myphoto.jpg'));
 fs.copyFileSync(path.join(root, 'outputs', 'admin', 'admin.html'), path.join(output, 'admin.html'));
-console.log('Generated homepage, about, projects, contact, and admin pages.');
+console.log('Generated homepage, about, projects, discovery, contact, and admin pages.');
