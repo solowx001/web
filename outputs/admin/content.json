@@ -55,6 +55,17 @@
       "source": "X (formerly Twitter)",
       "category": "AI 编程与工作流",
       "sourceType": "X"
+    },
+    {
+      "id": "593eb539-68fb-459b-aa1a-af6d785548c6",
+      "date": "2026-09-28",
+      "title": "现在做个个人小工具或者出海小产品，不建议买云服务器、配环境、折腾...",
+      "summary": "陈大黄 on X: \"现在做个个人小工具或者出海小产品，不建议买云服务器、配环境、折腾 Nginx，纯属自己给自己找罪受。 静态前端直接扔给 Cloudflare Pages，连着 GitHub 推送就能自动构建，全球 CDN 一分钱不收。 后端接口全丢给 Cloudflare Workers，毫秒级冷启动，每天几十万次请求的免费额度根本用不完。",
+      "url": "https://x.com/realchendahuang/status/2104576219434103002",
+      "image": "https://pbs.twimg.com/profile_images/2066350826617282560/9WSzwx4A_400x400.jpg",
+      "source": "X (formerly Twitter)",
+      "category": "AI 编程与工作流",
+      "sourceType": "X"
     }
   ]
 }
