@@ -35,10 +35,21 @@
   ],
   "discoveries": [
     {
-      "id": "d217d132-98c5-4233-b111-13c2e7f4b1d8",
+      "id": "b1a2d89e-1e71-43c0-a8b9-135f5f16fa3c",
       "date": "2026-09-29",
-      "title": "疯狂的烤妹儿 🩵 (@CrazyKaomei) on X",
-      "summary": "为什么聪明人做短视频早就不开剪映和 AE 了？ 这 6 个开源 Skill，直接把视频工业流水线塞进了 AI 编辑器：网页动效、口播除气口、批量矩阵、全自动成片…… 每一个都是能帮你节约 90% 时间的外挂，一键安装方式也放下面了👇",
+      "title": "给 AI 视频角色造了一间衣帽间：服装提取 Skill…",
+      "summary": "给 AI 视频角色造了一间衣帽间：服装提取 Skill 这不是一个特别稀奇的skill，但是我在做视频遇到的困境的时候顺手搓的一个skill。 这就是我做的 服装提取 Skill ：给它一张穿搭参考图，它把可见的配色、轮廓和层次留下，生成一张横向服装资产板。",
+      "url": "https://x.com/nanyuan0412/status/2104779172434546744",
+      "image": "https://pbs.twimg.com/media/HTWdC3-bcAAFje3?format=webp&name=large",
+      "source": "X (formerly Twitter)",
+      "category": "AI 生图与视频",
+      "sourceType": "X"
+    },
+    {
+      "id": "8573fc70-11cc-4987-a219-1be0d235a846",
+      "date": "2026-09-29",
+      "title": "6 个开源 Skill，直接把视频工业流水线塞进了 AI 编辑器",
+      "summary": "疯狂的烤妹儿 🩵 on X: \"为什么聪明人做短视频早就不开剪映和 AE 了？ 这 6 个开源 Skill，直接把视频工业流水线塞进了 AI 编辑器：网页动效、口播除气口、批量矩阵、全自动成片…… 每一个都是能帮你节约 90% 时间的外挂，一键安装方式也放下面了👇",
       "url": "https://x.com/CrazyKaomei/status/2104743714417447262",
       "image": "https://pbs.twimg.com/media/HTMRD3ra8AAGg43?format=webp&name=large",
       "source": "X (formerly Twitter)",
@@ -46,14 +57,14 @@
       "sourceType": "X"
     },
     {
-      "id": "270ceb66-521d-4c0b-bb5f-bc8fec07e6f8",
-      "date": "2026-09-29",
-      "title": "南鸢 nuyoah (@nanyuan0412) on X",
-      "summary": "AI 视频角色衣帽间：服装提取 Skill 这不是一个特别稀奇的skill，但是我在做视频遇到的困境的时候顺手搓的一个skill。 这就是我做的 服装提取 Skill ：给它一张穿搭参考图，它把可见的配色、轮廓和层次留下，生成一张横向服装资产板。",
-      "url": "https://x.com/nanyuan0412/status/2104779172434546744",
-      "image": "https://pbs.twimg.com/media/HTWdC3-bcAAFje3?format=webp&name=large",
+      "id": "593eb539-68fb-459b-aa1a-af6d785548c6",
+      "date": "2026-09-28",
+      "title": "现在做个个人小工具或者出海小产品，不建议买云服务器、配环境、折腾...",
+      "summary": "陈大黄 on X: \"现在做个个人小工具或者出海小产品，不建议买云服务器、配环境、折腾 Nginx，纯属自己给自己找罪受。 静态前端直接扔给 Cloudflare Pages，连着 GitHub 推送就能自动构建，全球 CDN 一分钱不收。 后端接口全丢给 Cloudflare Workers，毫秒级冷启动，每天几十万次请求的免费额度根本用不完。",
+      "url": "https://x.com/realchendahuang/status/2104576219434103002",
+      "image": "https://pbs.twimg.com/profile_images/2066350826617282560/9WSzwx4A_400x400.jpg",
       "source": "X (formerly Twitter)",
-      "category": "AI 生图与视频",
+      "category": "AI 编程与工作流",
       "sourceType": "X"
     }
   ]
