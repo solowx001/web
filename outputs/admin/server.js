@@ -5,6 +5,7 @@ const crypto = require('node:crypto');
 const { cleanContent } = require('../../lib/content');
 const { renderPages } = require('../../lib/render-site');
 const { analyzeDiscoveryUrl } = require('../../lib/discovery');
+const { topicTitle } = require('../../lib/discovery-title');
 
 const HOST = process.env.HOST || '127.0.0.1';
 const PORT = Number(process.env.PORT || 3000);
@@ -104,7 +105,8 @@ const server = http.createServer(async (req, res) => {
       if (!isAuthed(req)) return send(res, 401, { error: '请先登录' });
       if (req.method === 'GET' && url.pathname === '/api/content') return send(res, 200, content);
       if (req.method === 'POST' && url.pathname === '/api/analyze-discovery') {
-        return send(res, 200, await analyzeDiscoveryUrl((await readBody(req)).url));
+        const result = await analyzeDiscoveryUrl((await readBody(req)).url);
+        return send(res, 200, { ...result, title: topicTitle(result) });
       }
       if (req.method === 'PUT' && url.pathname === '/api/content') {
         content = cleanContent(await readBody(req));
