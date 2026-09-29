@@ -35,13 +35,24 @@
   ],
   "discoveries": [
     {
-      "id": "606d4d15-e18f-48c3-ad64-dfe4f1ddd1cc",
+      "id": "d217d132-98c5-4233-b111-13c2e7f4b1d8",
       "date": "2026-09-29",
-      "title": "视频角色的衣帽间：服装提取 Skill",
-      "summary": "AI 视频里的角色的一间衣帽间。",
+      "title": "疯狂的烤妹儿 🩵 (@CrazyKaomei) on X",
+      "summary": "为什么聪明人做短视频早就不开剪映和 AE 了？ 这 6 个开源 Skill，直接把视频工业流水线塞进了 AI 编辑器：网页动效、口播除气口、批量矩阵、全自动成片…… 每一个都是能帮你节约 90% 时间的外挂，一键安装方式也放下面了👇",
+      "url": "https://x.com/CrazyKaomei/status/2104743714417447262",
+      "image": "https://pbs.twimg.com/media/HTMRD3ra8AAGg43?format=webp&name=large",
+      "source": "X (formerly Twitter)",
+      "category": "AI 编程与工作流",
+      "sourceType": "X"
+    },
+    {
+      "id": "270ceb66-521d-4c0b-bb5f-bc8fec07e6f8",
+      "date": "2026-09-29",
+      "title": "南鸢 nuyoah (@nanyuan0412) on X",
+      "summary": "AI 视频角色衣帽间：服装提取 Skill 这不是一个特别稀奇的skill，但是我在做视频遇到的困境的时候顺手搓的一个skill。 这就是我做的 服装提取 Skill ：给它一张穿搭参考图，它把可见的配色、轮廓和层次留下，生成一张横向服装资产板。",
       "url": "https://x.com/nanyuan0412/status/2104779172434546744",
-      "image": "https://pbs.twimg.com/media/HTWdC3-bcAAFje3?format=jpg&name=small",
-      "source": "",
+      "image": "https://pbs.twimg.com/media/HTWdC3-bcAAFje3?format=webp&name=large",
+      "source": "X (formerly Twitter)",
       "category": "AI 生图与视频",
       "sourceType": "X"
     }
